@@ -5,17 +5,16 @@
 <acme-navbar creation-date="main.creationDate"></acme-navbar>
 
         <!-- Page content -->
-        <div id="page-content-wrapper">
+        <div id="page-content-wrapper" class="main_page">
 <div class="content-header">
     <div class="row">
-        <div class="col-sm-12 text-center">
+        <div class="col-sm-12 text-center btns-div">
             <button class="btn btn-primary btns" ng-click="main.sortBy('image_size')">Sort By Size</button>
             <button class="btn btn-primary btns" ng-click="main.sortBy('image_mod_date')">Sort By Date Modified</button>
             <button class="btn btn-primary btns" ng-click="main.sortBy('image_name')">Sort By Name</button>
         </div>
     </div>
 </div>
-
 <div class="page-content inset" data-spy="scroll" data-target="#spy">
     <div class="row">
         <div class="container">
@@ -26,6 +25,7 @@
                         <strong><div>{{image.image_name}}  </div></strong>
                         <div>{{((image.image_size)/1024).toFixed(2)}}   {{ 'name_size' | translate }}</div>
                         <div>{{image.image_mod_date}}</div>
+
                     </div>
                 </div>
 

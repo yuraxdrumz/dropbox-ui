@@ -8,7 +8,7 @@
   /** @ngInject */
   function contactController() {
     var vm = this;
-      vm.creationDate = 1472796953931;
+
 
   }
 })();

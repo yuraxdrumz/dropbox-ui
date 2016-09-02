@@ -2,22 +2,32 @@
 <!-- Sidebar -->
 <div id="sidebar-wrapper">
     <nav id="spy">
+       <div class="logo">
+           <span class="glyphicon glyphicon-home home"></span>
+       </div>
         <ul class="sidebar-nav nav">
             <li class="sidebar-brand">
-                <a ui-sref="home"><span class="fa fa-home solo">Home</span></a>
+                <a ui-sref="home">
+                    <span>Home</span>
+                </a>
+
             </li>
             <li>
-                <a ui-sref="about" data-scroll>
-                    <span class="fa fa-anchor solo">About</span>
+                <a ui-sref="about">
+                    <span>About</span>
                 </a>
             </li>
             <li>
-                <a ui-sref="contact" data-scroll>
-                    <span class="fa fa-anchor solo">Contact</span>
+                <a ui-sref="contact" >
+                    <span>Contact</span>
                 </a>
             </li>
 
         </ul>
+        <div class="upgrade">
+
+            <button class="btn btn-success">Upgrade Account</button>
+        </div>
 
     </nav>
 </div>
