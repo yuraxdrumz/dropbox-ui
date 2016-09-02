@@ -15,25 +15,32 @@
                 <hr>
             </li>
 
-            <li>
+            <li class="sidebar-brand">
 
-                <a class="blue_icon" ui-sref="about">
+                <a class="red_icon" ui-sref="about">
                     <span class="nav_icon">About</span>
                 </a>
                <hr>
             </li>
 
-            <li>
-                <a class="green_icon"  ui-sref="contact" >
+            <li class="sidebar-brand">
+                <a class="red_icon"  ui-sref="contact" >
                     <span class="nav_icon">Contact</span>
                 </a>
             </li>
 
         </ul>
+
+
         <div class="upgrade">
+                    <div class = "progress progress-striped active">
+                <div class = "progress-bar progress-bar-primary" role = "progressbar"
+                aria-valuenow = "60" aria-valuemin = "0" aria-valuemax = "100" style="width:{{(vm.size)*10}}%">
+                </div>
+            </div>
+<button class="btn btn-primary">Upgrade Account</button>
 
 
-            <button class="btn btn-primary">Upgrade Account</button>
         </div>
 
     </nav>

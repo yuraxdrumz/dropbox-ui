@@ -11,7 +11,7 @@
       restrict: 'E',
       templateUrl: 'app/components/navbar/navbar.html',
       scope: {
-          creationDate: '='
+          size:'='
       },
       controller: NavbarController,
       controllerAs: 'vm',

@@ -18,6 +18,7 @@
     vm.size = 0;
     activate();
     images()
+    vm.bar_size = 2;
     function activate() {
       getWebDevTec();
       $timeout(function() {
@@ -30,11 +31,15 @@
             for(var i=0,len=res.data.images.length;i<len;i++){
                 res.data.images[i].image_mod_date = moment(res.data.images[i].image_mod_date).fromNow();
                 vm.size += res.data.images[i].image_size;
+
             }
+
+
             vm.images = orderByFilter(res.data.images,vm.propName,vm.reverse)
         })
     }
     vm.sortBy = function(val){
+        console.log(val)
         vm.reverse = !vm.reverse;
         vm.images = orderByFilter(vm.images, val, vm.reverse)
     }
@@ -50,6 +55,7 @@
         awesomeThing.rank = Math.random();
       });
     }
+
 
   }
 })();
