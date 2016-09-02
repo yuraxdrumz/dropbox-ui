@@ -8,10 +8,10 @@
         <div id="page-content-wrapper">
 <div class="content-header">
     <div class="row">
-        <div class="col-sm-12 btns text-center">
-            <button class="btn btn-primary" ng-click="main.sortBy('image_size')">Sort By Size</button>
-            <button class="btn btn-primary" ng-click="main.sortBy('image_mod_date')">Sort By Date Modified</button>
-            <button class="btn btn-primary" ng-click="main.sortBy('image_name')">Sort By Name</button>
+        <div class="col-sm-12 text-center">
+            <button class="btn btn-primary btns" ng-click="main.sortBy('image_size')">Sort By Size</button>
+            <button class="btn btn-primary btns" ng-click="main.sortBy('image_mod_date')">Sort By Date Modified</button>
+            <button class="btn btn-primary btns" ng-click="main.sortBy('image_name')">Sort By Name</button>
         </div>
     </div>
 </div>
@@ -20,7 +20,7 @@
     <div class="row">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-sm-6 col-xs-6" ng-repeat="image in main.images">
+                <div class="col-lg-4 col-sm-6 col-xs-12" ng-repeat="image in main.images">
                     <div class="each_photo">
                         <img ng-src="{{image.url}}" class="thumbnail img-responsive">
                         <strong><div>{{image.image_name}}  </div></strong>
