@@ -1,0 +1,43 @@
+.main_image{
+    width:90%;
+    height: 50%;
+}
+.main_page{
+    position: relative;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+.thumbnail{
+//    display: flex;
+//    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+}
+.content{
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+.btns{
+    margin: 10px;
+}
+.holder{
+    width: 30%;
+    height: 400px;
+    display: flex;
+
+}
+@media screen and (max-width: 768px){
+    .holder{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+    .navbar{
+        width: 100%;
+    }
+}
