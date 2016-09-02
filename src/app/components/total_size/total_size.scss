@@ -1,12 +1,11 @@
 .total_footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:white;
-    margin: 0;
-    padding: 0;
-    position: fixed;
+    position: absolute;
     bottom: 0;
-    border-radius: 0;
-    width: 98%;
+    color:white;
+    text-align: center;
+}
+@media (max-width:767px){
+    .total_footer{
+        width: 95%;
+    }
 }

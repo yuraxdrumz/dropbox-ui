@@ -8,7 +8,7 @@
   /** @ngInject */
   function routerConfig($stateProvider, $urlRouterProvider,$translateProvider) {
     var translations = {
-        "name_size":"KiloBytes",
+        "name_size":"mbs",
         "name_title":"Total images size is",
         "about_page":"This is the about page!",
         "contact_page":"This is the contact page!"

@@ -50,5 +50,6 @@
         awesomeThing.rank = Math.random();
       });
     }
+
   }
 })();
