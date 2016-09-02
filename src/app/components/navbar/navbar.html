@@ -1,45 +1,23 @@
-<!--
-<nav class="navbar navbar-static-top navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href>
-        <span class="glyphicon glyphicon-home"></span> Logo
-      </a>
-    </div>
 
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
-      <ul class="nav navbar-nav">
-        <li><a ui-sref='home'>Home</a></li>
-        <li><a ui-sref='about'>About</a></li>
-        <li><a ui-sref='contact'>Contact</a></li>
-      </ul>
+<!-- Sidebar -->
+<div id="sidebar-wrapper">
+    <nav id="spy">
+        <ul class="sidebar-nav nav">
+            <li class="sidebar-brand">
+                <a ui-sref="home"><span class="fa fa-home solo">Home</span></a>
+            </li>
+            <li>
+                <a ui-sref="about" data-scroll>
+                    <span class="fa fa-anchor solo">About</span>
+                </a>
+            </li>
+            <li>
+                <a ui-sref="contact" data-scroll>
+                    <span class="fa fa-anchor solo">Contact</span>
+                </a>
+            </li>
 
-      <ul class="nav navbar-nav navbar-right acme-navbar-text">
-        <li>Application was created {{ vm.relativeDate }}.</li>
-      </ul>
-    </div>
-  </div>
-</nav>
--->
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <nav id="spy">
-                <ul class="sidebar-nav nav">
-                    <li class="sidebar-brand">
-                        <a ui-sref="home"><span class="fa fa-home solo">Home</span></a>
-                    </li>
-                    <li>
-                        <a ui-sref="about" data-scroll>
-                            <span class="fa fa-anchor solo">About</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a ui-sref="contact" data-scroll>
-                            <span class="fa fa-anchor solo">Contact</span>
-                        </a>
-                    </li>
+        </ul>
 
-                </ul>
-
-            </nav>
-        </div>
+    </nav>
+</div>
