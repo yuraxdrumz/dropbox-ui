@@ -1,5 +1,5 @@
 
-#wrapper {
+.all_main {
     display: flex;
     flex-wrap: wrap;
     height: 100%;
@@ -8,12 +8,13 @@
   padding-left: 250px;
     overflow: hidden;
   transition: all 0.4s ease 0s;
+    background: url(http://www.planwallpaper.com/static/images/518079-background-hd.jpg) 50% 50%;
+    background-size: cover;
 }
 
 
 .main_page{
-    background: url(http://www.planwallpaper.com/static/images/518079-background-hd.jpg) 50% 50%;
-    background-size: cover;
+
 }
 .thumbnail{
     margin-top: 10px;
@@ -47,5 +48,23 @@
     }
 }
 .btns-div{
+//    background-color: rgba(0, 0, 0, 0.42);
+}
+.jumbo{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
     background-color: rgba(0, 0, 0, 0.42);
+}
+.top_nav_icon:hover{
+    text-decoration: none;
+
+}
+.top_nav_icon{
+    margin: 0px 20px;
 }
